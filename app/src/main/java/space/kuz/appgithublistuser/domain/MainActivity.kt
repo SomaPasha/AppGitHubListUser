@@ -1,4 +1,4 @@
-package space.kuz.appgithublistuser
+package space.kuz.appgithublistuser.domain
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
