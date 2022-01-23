@@ -7,7 +7,7 @@ import space.kuz.appgithublistuser.domain.entity.UserEntity
 
 class App: Application() {
 
-    var userRepo: UserRepository=UserRepositoryImplementation()
+    var userRepo: UserRepository= UserRepositoryImplementation()
 
     fun fillUserRepo(){
         userRepo.createUser(
@@ -17,8 +17,6 @@ class App: Application() {
             UserEntity("Sasha","Love play computer","https://n1s1.elle.ru/13/93/49/13934924bb5dfe4a3b346fa62e59b967/460x598_0xc0a839a4_281420171479222123.jpeg")
         )
     }
-
-
-    val Context.app
-        get() = applicationContext as App
 }
+val Context.app
+    get() = applicationContext as App
