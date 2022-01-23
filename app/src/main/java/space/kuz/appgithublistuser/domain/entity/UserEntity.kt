@@ -5,8 +5,13 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class UserEntity(
-    val id:Int,
-    val name:Int,
+    val name:String,
     val description:String,
-    val image: String
-): Parcelable {}
+    val imageUrl: String
+): Parcelable {
+    var id:Long
+        get() {
+            TODO()
+        }
+        set(value) {}
+}
